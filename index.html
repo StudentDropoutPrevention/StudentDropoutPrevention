@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dropout Prevention | Shwapnojatra Foundation</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #f5f8fc;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #075e43;
+            color: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo h2 {
+            font-size: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 8px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd166;
+        }
+
+        .hero {
+            min-height: 450px;
+            background: linear-gradient(
+                rgba(0, 65, 45, 0.78),
+                rgba(0, 65, 45, 0.78)
+            ), url("dropout.jpg");
+
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 50px 20px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ffc107;
+            color: #222;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 55px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #075e43;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            color: #087f5b;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            font-size: 15px;
+        }
+
+        .mission {
+            background: #e7f5ee;
+        }
+
+        .join {
+            background: #075e43;
+            color: white;
+        }
+
+        .join h2 {
+            color: white;
+        }
+
+        footer {
+            background: #12352b;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer a {
+            color: #ffd166;
+            text-decoration: none;
+        }
+
+        @media(max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <div class="logo">
+            <h2>Dropout Prevention </h2>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="programs.html">Programs</a>
+            <a href="dropout.html">Dropout Prevention</a>
+            <a href="scholarship.html">Scholarship</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <div class="hero">
+
+        <div class="hero-content">
+
+            <h1>Stop School Dropout, Save the Future</h1>
+
+            <p>
+                Every Child Deserves Education.
+                Shwapnojatra Foundation is committed to preventing
+                school dropout and ensuring quality education for every child.
+            </p>
+
+            <a href="#programs" class="btn">Explore Our Activities</a>
+
+        </div>
+
+    </div>
+
+
+    <!-- About Section -->
+    <section>
+
+        <h2>Dropout Prevention Program</h2>
+
+        <p>
+            Shwapnojatra Foundation works to reduce school dropout
+            through educational support, awareness programs,
+            family engagement and community participation.
+            Our goal is to create a society where every child
+            has the opportunity to complete their education.
+        </p>
+
+    </section>
+
+
+    <!-- Mission Section -->
+    <section class="mission">
+
+        <h2>Our Mission</h2>
+
+        <p>
+            To ensure that no child is left behind due to poverty,
+            social barriers or lack of educational opportunities.
+            We aim to support vulnerable children and encourage
+            them to continue their education.
+        </p>
+
+    </section>
+
+
+    <!-- Programs Section -->
+    <section id="programs">
+
+        <h2>Our Key Activities</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>📚 Educational Support</h3>
+                <p>
+                    Providing educational materials and learning
+                    support to disadvantaged students.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🎓 Scholarship Support</h3>
+                <p>
+                    Supporting talented and financially disadvantaged
+                    students through educational assistance.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>👨‍👩‍👧 Family Awareness</h3>
+                <p>
+                    Encouraging parents to understand the importance
+                    of education and regular school attendance.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🏫 Community Engagement</h3>
+                <p>
+                    Working with teachers, parents and communities
+                    to prevent school dropout.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>👧 Girls' Education</h3>
+                <p>
+                    Promoting equal educational opportunities
+                    for girls and boys.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🤝 Student Follow-up</h3>
+                <p>
+                    Identifying at-risk students and encouraging
+                    them to continue their education.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Our Vision -->
+    <section>
+
+        <h2>Our Vision</h2>
+
+        <p>
+            A dropout-free society where every child has access
+            to inclusive, equitable and quality education.
+        </p>
+
+    </section>
+
+
+    <!-- Join Us -->
+    <section class="join">
+
+        <h2>Join Us to Prevent School Dropout</h2>
+
+        <p>
+            Your support can help a child continue their education
+            and build a brighter future.
+        </p>
+
+        <br>
+
+        <a href="contact.html" class="btn">Join Our Mission</a>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>Shwapnojatra Foundation</h3>
+
+        <p>Education | Awareness | Development</p>
+
+        <p>
+            Working Together for a Better Future
+        </p>
+
+        <p>
+            DSS Registration: Under Process
+        </p>
+
+        <br>
+
+        <p>
+            Copyright © 2026 Shwapnojatra Foundation.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
